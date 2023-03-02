@@ -118,27 +118,23 @@ a:visited{
     color: var(--primary);
 }
 
-@media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
     }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:last-child {
-      flex-grow: 1;
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
     }
-  }
-  
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
+    /* Change the header background */
     header {
-      width: 75%;
+      background: #772014;
     }
-  
-    .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #bb8588;
     }
   }
