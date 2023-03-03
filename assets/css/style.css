@@ -5,7 +5,7 @@
     --back: #b9c6ae;
     --light: white;
 }
-  /* var(--bright-turquoise) */
+
   * {
     box-sizing: border-box;
   }
@@ -27,6 +27,11 @@
 
   h2 {
     color: var(--primary);
+    font-size: 3rem;
+  }
+
+  h3 {
+    color: var(--secondary);
     font-size: 3rem;
   }
     
@@ -65,6 +70,9 @@ nav a {
         color: var(--primary);
         font-weight: bold;
         text-decoration: none;
+}
+a { 
+  color: inherit;
 }
 
 a:visited{  
@@ -107,16 +115,54 @@ a:visited{
     }
 
 .about-me {
-
-  }
+  color:  var(--primary);
+  display: flex;
+  justify-content: center;
+}
 
 .project {
+  color: var(--primary);
 
 }
 
 .contact-me {
     color: var(--primary);
 }
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  /* Centers along the main axis determined by flex-direction */
+  justify-content: left;
+  /* Centers along the opposite axis */
+  /* align-items: center; */
+  width: 80%;
+  /* Uses the height of the viewport */
+  height: 20vh;
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
