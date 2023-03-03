@@ -140,8 +140,9 @@ a:visited{
   /* Uses the height of the viewport */
   height: 20vh;
   margin: 20px;
-  border-style: solid;
-  border-width: 2px;
+  border-style: double;
+  border-width: 7px;
+  border-color: var(--secondary);
 }
 
 .column {
