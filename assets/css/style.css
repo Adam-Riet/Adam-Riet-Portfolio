@@ -31,8 +31,12 @@
   }
 
   h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--secondary);
     font-size: 3rem;
+    justify-content: center;
   }
     
   header {
@@ -56,8 +60,8 @@ img {
     border-radius: 18%;
     
 }
-  
-  nav {
+
+nav {
    font-size: 35px;
     text-align: right;
     color: var(--secondary);
@@ -135,19 +139,36 @@ a:visited{
   /* Centers along the main axis determined by flex-direction */
   justify-content: left;
   /* Centers along the opposite axis */
-  /* align-items: center; */
+  align-items: left;
   width: 80%;
   /* Uses the height of the viewport */
-  height: 20vh;
-  margin: 20px;
+  height: 80vh;
+  margin: 0 auto;
   border-style: double;
   border-width: 7px;
   border-color: var(--secondary);
 }
 
-.column {
+.card {
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--secondary);
+}
+
+.float-right {
   display: flex;
-  flex-direction: column
+  float: inline-end;
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+  
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 
@@ -162,26 +183,3 @@ a:visited{
 
 
 
-
-
-
-@media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    main,
-    nav {
-      flex-direction: column;
-    }
-    /* Make the sidebar stack below the body */
-    aside {
-      order: 2;
-    }
-    /* Change the header background */
-    header {
-      background: #772014;
-    }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  }
