@@ -1,10 +1,9 @@
 /* Colors sourced from https://www.w3schools.com/cssref/css_colors.php */
 :root {
-    --primary: #faebd7;
+    --primary: white;
     --secondary: #2E8B57;
     --back: #b9c6ae;
-    --light: white;
-}
+    }
 
   * {
     box-sizing: border-box;
@@ -124,7 +123,8 @@ a:visited{
   justify-content: center;
 }
 
-.project {
+.project 
+.contact-me {
   color: var(--primary);
 
 }
@@ -133,40 +133,26 @@ a:visited{
     color: var(--primary);
 }
 
-.projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  width: 80%;
-  height: 82vh;
-  margin: 0 auto;
-  border-style: double;
-  border-width: 7px;
-  border-color: var(--secondary);
-}
-
 .card {
   padding: 10px;
-  width: 250px;
   text-align: center;
   border-style: solid;
   border-width: 5px;
   border-color: var(--secondary);
 }
 
-.float-right {
+.projects {
   display: flex;
-  float: inline-end;
-  align-items: center;
-  width: 250px;
-  height: 250px;
-  margin-left: 100px;
-  
-}
-
-.justify-center {
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border-style: double;
+  border-width: 7px;
+  border-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 
