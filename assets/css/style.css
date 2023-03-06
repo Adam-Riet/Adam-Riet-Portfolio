@@ -148,9 +148,7 @@ a:visited{
   padding: 12px;
 }
 
-.projects.main {
-  flex: 2 1 200px;
-}
+
 
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
