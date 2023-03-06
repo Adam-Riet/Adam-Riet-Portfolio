@@ -16,7 +16,6 @@
   h1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
   background-color: var(--back);
   color: var(--primary);    
@@ -117,6 +116,7 @@ a:visited{
     font-size: 2rem;
     }
 
+ /* Created unique selectors to link to nav */
 .about-me {
   color:  var(--primary);
   display: flex;
@@ -129,9 +129,7 @@ a:visited{
 
 }
 
-.contact-me {
-    color: var(--primary);
-}
+
 
 .projects {
   display: flex;
@@ -151,15 +149,14 @@ a:visited{
 
 
 @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
+    /* Set main HTML Elements to column on smaller screens*/
+    nav,
     main,
-    nav {
+    section {
       flex-direction: column;
     }
-    /* Make the sidebar stack below the body */
+    /* Side bar to appear at top of items */
     aside {
       order: 0;
     }
-    
-    
-  }
+    }
